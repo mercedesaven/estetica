@@ -1,0 +1,109 @@
+@import "_reset";
+@import "_variables";
+
+body{
+    margin: auto;
+    h2{
+        font-family: $font-title;
+        font-size: 20px;
+      }
+      p{
+          font-family: $font;
+          font-size: 14px;
+      }
+
+}
+header{
+    background-color: $light-grey;
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 80px;
+    z-index: 0;
+.mainNav{
+    margin: 30px;  
+    display: flex;
+      justify-content: space-between;
+    .menu{
+        ul{
+            display: flex;
+            justify-content: space-around;
+            color: $grey;
+            li{
+               padding: 0 10px;
+               a{
+                  text-decoration: none;
+                  color:$dark-grey;
+                  font-family: $font;
+                  &:hover{
+                      font-weight: bold;
+                    }
+                 }
+                }
+
+            }
+        }
+    }   
+}
+#inicio{
+    margin-top:80px;
+  
+    .mainCarrousel{
+    #carouselExampleFade{
+        .carousel-inner{
+            margin: auto;
+            width: 100%; 
+            .carousel-item .active{
+                .imgsize{
+                    height: 300px;
+                }}}
+
+}
+   
+   }
+}
+.container{
+    margin:25px;
+    display: flex;
+    justify-content: space-between;
+    color: $dark-grey;
+    
+    .staffDescription{
+      margin: 20px;
+      display: flex;
+      flex-direction: column;
+ 
+    }
+    .productContainer{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        .seeMore
+        {margin: 20px;
+            a{
+            font-family: $font;
+            text-decoration: none;
+            text-transform: uppercase;
+            color:$purple;
+            font-weight: bold;
+            text-align: center;
+            padding:5px;
+            &:hover{
+                background-color: $purple;
+                color:$white;
+                
+            }
+        }
+        }
+    }
+    .social{
+        p{
+        margin: 20px;}}
+       
+}
+   
+
