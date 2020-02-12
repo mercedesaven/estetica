@@ -21,9 +21,6 @@ time, mark, audio, video {
   text-decoration: none;
 }
 
-body {
-  margin: auto;
-}
 body h2 {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
@@ -32,72 +29,74 @@ body p {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
-
-header {
-  background-color: #efeeed;
+body header {
+  background-color: #FFFCFA;
   display: flex;
   flex-direction: column;
-  width: 100%;
   overflow: hidden;
   position: fixed;
   top: 0;
   left: 0;
   height: 80px;
   z-index: 0;
+  width: 100%;
 }
-header .mainNav {
+body header .mainNav {
   margin: 30px;
   display: flex;
   justify-content: space-between;
 }
-header .mainNav .menu ul {
+body header .mainNav .menu ul {
   display: flex;
   justify-content: space-around;
   color: #A5A3A1;
 }
-header .mainNav .menu ul li {
+body header .mainNav .menu ul li {
   padding: 0 10px;
 }
-header .mainNav .menu ul li a {
+body header .mainNav .menu ul li a {
   text-decoration: none;
   color: #737270;
   font-family: "Roboto", sans-serif;
 }
-header .mainNav .menu ul li a:hover {
+body header .mainNav .menu ul li a:hover {
   font-weight: bold;
 }
-
-#inicio {
+body #inicio {
   margin-top: 80px;
 }
-#inicio .mainCarrousel #carouselExampleFade .carousel-inner {
+body #inicio .mainCarrousel #carouselExampleFade .carousel-inner {
   margin: auto;
   width: 100%;
 }
-#inicio .mainCarrousel #carouselExampleFade .carousel-inner .carousel-item .active .imgsize {
+body #inicio .mainCarrousel #carouselExampleFade .carousel-inner .carousel-item .active .imgsize {
   height: 300px;
 }
-
-.container {
-  margin: 25px;
-  display: flex;
-  justify-content: space-between;
-  color: #737270;
+body #inicio .mainBannerMob {
+  display: none;
 }
-.container .staffDescription {
-  margin: 20px;
+body #inicioMob {
+  display: none;
+}
+body .container {
+  display: flex;
+  margin: 25px 0;
+  align-items: center;
+}
+body .container .staffDescription {
+  margin: 40px;
   display: flex;
   flex-direction: column;
 }
-.container .productContainer {
+body .container .productContainer {
+  margin: 40px;
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
 }
-.container .productContainer .seeMore {
+body .container .productContainer .seeMore {
   margin: 20px;
 }
-.container .productContainer .seeMore a {
+body .container .productContainer .seeMore a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
@@ -106,12 +105,51 @@ header .mainNav .menu ul li a:hover {
   text-align: center;
   padding: 5px;
 }
-.container .productContainer .seeMore a:hover {
+body .container .productContainer .seeMore a:hover {
   background-color: #B33D68;
   color: #FFFCFA;
 }
-.container .social p {
+body .container .social {
+  margin: 40px;
+}
+body .container .social p {
   margin: 20px;
+}
+body .footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .footerContainer .footerNav {
+  display: flex;
+  align-items: baseline;
+}
+body .footerContainer .footerNav span {
+  margin: 0 5px;
+}
+@media (max-width: 400px) {
+  body .mainNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 30px;
+    margin: 10px;
+  }
+  body .mainNav .menu {
+    display: none;
+  }
+  body .mainCarrousel {
+    display: none;
+  }
+  body .container {
+    margin: 5px 0;
+  }
+  body .imgstaff, body .imgProd, body .locationMap {
+    display: none;
+  }
+  body .staffDescription {
+    margin: 10px;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

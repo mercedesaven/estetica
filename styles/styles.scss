@@ -2,7 +2,6 @@
 @import "_variables";
 
 body{
-    margin: auto;
     h2{
         font-family: $font-title;
         font-size: 20px;
@@ -12,22 +11,22 @@ body{
           font-size: 14px;
       }
 
-}
+
 header{
-    background-color: $light-grey;
+    background-color:$white;
     display: flex;
     flex-direction: column; 
-    width: 100%;
     overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
     height: 80px;
     z-index: 0;
-.mainNav{
+    width: 100%;
+    .mainNav{
     margin: 30px;  
     display: flex;
-      justify-content: space-between;
+    justify-content: space-between;
     .menu{
         ul{
             display: flex;
@@ -51,7 +50,6 @@ header{
 }
 #inicio{
     margin-top:80px;
-  
     .mainCarrousel{
     #carouselExampleFade{
         .carousel-inner{
@@ -65,23 +63,28 @@ header{
 }
    
    }
+   .mainBannerMob{
+       display: none;
+   }
+}
+#inicioMob{
+    display: none;
 }
 .container{
-    margin:25px;
-    display: flex;
-    justify-content: space-between;
-    color: $dark-grey;
-    
+  display: flex;
+  margin: 25px 0;
+  align-items: center;  
     .staffDescription{
-      margin: 20px;
+      margin: 40px;
       display: flex;
-      flex-direction: column;
+     flex-direction: column;
+
  
     }
     .productContainer{
+        margin: 40px;  
         display: flex;
         flex-direction: column;
-        margin-left: 20px;
         .seeMore
         {margin: 20px;
             a{
@@ -101,9 +104,49 @@ header{
         }
     }
     .social{
+        margin: 40px;
         p{
         margin: 20px;}}
        
 }
-   
 
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .footerNav{
+        display: flex;
+        align-items: baseline;
+        span{
+        margin: 0 5px;}
+    }
+        }
+    
+        
+@media (max-width: $breakpoint-mobile){
+    .mainNav{
+        .menu{
+            display: none;
+                }
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        height: 30px;
+        margin: 10px
+    }
+    .mainCarrousel{
+        display: none;
+    }
+    
+    .container{
+        margin: 5px 0;
+    }
+    .imgstaff, .imgProd, .locationMap {
+        display: none;
+    }
+    .staffDescription{
+        margin: 10px
+    }
+}
+
+}

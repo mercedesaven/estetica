@@ -8,12 +8,12 @@
     <link type="text/css" rel="stylesheet" href="styles/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto:300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c5597b534a.js" crossorigin="anonymous"></script>
-
+    <script type='text/javascript' src="script.js"></script>
        <title>MT Cirugía Plástica</title>
 </head>
 <body>
-    <header>
-        <nav class="mainNav">
+    <header id='mainHeader'>
+        <nav class="mainNav" id='navBar'>
           <div class="logo">
             <img src="#" alt=""> <a href="#inicio">LOGO</a>
           </div>
@@ -26,8 +26,8 @@
             </ul>
           </div>
         </nav>
-      </header>
-        <div id='inicio'>
+    </header>
+    <div id='inicio'>
             <div class="mainCarrousel"> 
               <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
@@ -57,7 +57,11 @@
                   </div>
                 </div>
             </div>
-        </div>
+            <div class="mainBannerMob">
+              <img src='styles/img/1.png'>
+        
+            </div>
+    </div>
     <div id="staff" class='container'>
       <div class="staffDescription"> 
        <h2>Nuestro Staff</h2>
@@ -75,11 +79,11 @@
         <img src="styles/img/prod.png">
       </div>
             <div class="productContainer">
-        <h2>Medicina Estetica</h2>
-        <p>
+             <h2>Medicina Estetica</h2>
+             <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem eos dolore voluptas facilis dolorum, enim sunt debitis velit explicabo illum vero rerum ratione delectus vel. Ea reiciendis inventore perferendis dicta.
-        </p>
-        <div class='seeMore'><a href="more">Ver Mas</a></div>
+            </p>
+        <div class='seeMore'><a href="servicios.html">Ver Mas</a></div>
       </div>
     </div>
     <div  id="contacto"  class="container"> 
@@ -90,10 +94,24 @@
           <span><i class="fab fa-facebook-f"></i>facebook</span>
           <p>instagram</p>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5681968870244!2d-58.396039684770805!3d-34.589790980463036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa2a2d23af3%3A0xe46ac88f9ba05c19!2sJun%C3%ADn%201616%2C%20C1113AAR%20CABA!5e0!3m2!1ses-419!2sar!4v1580346122293!5m2!1ses-419!2sar" width="500" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+        <div class="locationMap">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.5681968870244!2d-58.396039684770805!3d-34.589790980463036!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccaa2a2d23af3%3A0xe46ac88f9ba05c19!2sJun%C3%ADn%201616%2C%20C1113AAR%20CABA!5e0!3m2!1ses-419!2sar!4v1580346122293!5m2!1ses-419!2sar" width="300" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe> 
+        </div>  
     </div>
+    <footer class='footerContainer'>
+        <div class= footerNav>
+           <span><i class="fas fa-inbox"></i>" <a href="micaela.012@gmail.com">micaelatavernacp@gmail.com
+          </a></span>
+           <span><a href="https://www.facebook.com/mtcirugiaplastica/"> <i class="fab fa-facebook-f"></i>/mtcirugiaplastica</a></span>
+           <span><a href="https://www.instagram.com/mtcirugiaplastica/"> <i class="fab fa-instagram"></i>@mtcirugiaplastica</a></span>
+        </div>
+        <div>
+                Copyright © 2020
+        </div>
+    </footer>
+   
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
+ </body>
 </html>
