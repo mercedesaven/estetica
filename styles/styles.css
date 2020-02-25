@@ -38,7 +38,7 @@ body header {
   top: 0;
   left: 0;
   height: 80px;
-  z-index: 0;
+  z-index: 10;
   width: 100%;
 }
 body header .mainNav {
@@ -72,16 +72,13 @@ body #inicio .mainCarrousel #carouselExampleFade .carousel-inner {
 body #inicio .mainCarrousel #carouselExampleFade .carousel-inner .carousel-item .active .imgsize {
   height: 300px;
 }
-body #inicio .mainBannerMob {
-  display: none;
-}
-body #inicioMob {
+body .mainBannerMob {
   display: none;
 }
 body .container {
   display: flex;
-  margin: 25px 0;
   align-items: center;
+  margin-top: 40px;
 }
 body .container .staffDescription {
   margin: 40px;
@@ -115,19 +112,31 @@ body .container .social {
 body .container .social p {
   margin: 20px;
 }
+body .container .social p a {
+  color: #737270;
+}
+body .container .social p a i {
+  margin-right: 5px;
+}
 body .footerContainer {
+  margin-top: 10px;
+  background-color: #FFFCFA;
+}
+body .footerContainer div {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-body .footerContainer .footerNav {
-  display: flex;
-  align-items: baseline;
+body .footerContainer div p {
+  margin: 2px;
 }
-body .footerContainer .footerNav span {
-  margin: 0 5px;
+body .footerContainer div p a {
+  color: #737270;
 }
-@media (max-width: 400px) {
+body .footerContainer div p a i {
+  margin-right: 2px;
+}
+@media (max-width: 500px) {
   body .mainNav {
     display: flex;
     flex-direction: column;
@@ -141,14 +150,20 @@ body .footerContainer .footerNav span {
   body .mainCarrousel {
     display: none;
   }
+  body .mainBannerMob {
+    display: block;
+  }
+  body .mainBannerMob img {
+    width: 100%;
+  }
   body .container {
-    margin: 5px 0;
+    margin-top: 10px;
   }
-  body .imgstaff, body .imgProd, body .locationMap {
-    display: none;
-  }
-  body .staffDescription {
+  body .container .staffDescription, body .container .productContainer, body .container .social {
     margin: 10px;
+  }
+  body .container .imgstaff, body .container .imgProd, body .container .locationMap {
+    display: none;
   }
 }
 

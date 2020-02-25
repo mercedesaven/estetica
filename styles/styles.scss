@@ -21,7 +21,7 @@ header{
     top: 0;
     left: 0;
     height: 80px;
-    z-index: 0;
+    z-index: 10;
     width: 100%;
     .mainNav{
     margin: 30px;  
@@ -63,28 +63,24 @@ header{
 }
    
    }
-   .mainBannerMob{
-       display: none;
-   }
+   
 }
-#inicioMob{
+.mainBannerMob{
     display: none;
 }
 .container{
   display: flex;
-  margin: 25px 0;
   align-items: center;  
+  margin-top: 40px;
     .staffDescription{
       margin: 40px;
       display: flex;
      flex-direction: column;
-
- 
     }
     .productContainer{
-        margin: 40px;  
-        display: flex;
-        flex-direction: column;
+      margin: 40px;  
+      display: flex;
+      flex-direction: column;
         .seeMore
         {margin: 20px;
             a{
@@ -106,47 +102,69 @@ header{
     .social{
         margin: 40px;
         p{
-        margin: 20px;}}
-       
-}
+        margin: 20px;
+        a{
 
-.footerContainer{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .footerNav{
-        display: flex;
-        align-items: baseline;
-        span{
-        margin: 0 5px;}
-    }
+            color:$dark-grey;
+        i{
+            margin-right: 5px;
         }
+    }
+    }
     
+    }
+            
+        }
+    .footerContainer{
+        margin-top: 10px;
+        background-color:$white ;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            p{
+                margin: 2px;
+                a {
+                color:$dark-grey;
+                i{
+                margin-right: 2px;
+            }}
+        }
+    }
+    }
         
 @media (max-width: $breakpoint-mobile){
     .mainNav{
         .menu{
             display: none;
                 }
-                display: flex;
-                flex-direction: column;
-                align-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         height: 30px;
         margin: 10px
     }
     .mainCarrousel{
         display: none;
     }
-    
+    .mainBannerMob{
+        display: block;
+        img{
+        width: 100%;
+    }
+    }
     .container{
-        margin: 5px 0;
+        margin-top: 10px;
+        .staffDescription, .productContainer, .social{
+            margin: 10px;
+        }
+        .imgstaff, .imgProd, .locationMap {
+            display: none;
+        }
+    
+    
     }
-    .imgstaff, .imgProd, .locationMap {
-        display: none;
-    }
-    .staffDescription{
-        margin: 10px
-    }
-}
-
-}
+    }}
+    
+    
+   
