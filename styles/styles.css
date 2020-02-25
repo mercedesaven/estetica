@@ -98,7 +98,8 @@ body .mainBanner img {
 body .container {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 body .container .staffDescription {
   margin: 40px;
@@ -117,14 +118,17 @@ body .container .productContainer .seeMore a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   text-transform: uppercase;
-  color: #B33D68;
+  color: #FFDC31;
   font-weight: bold;
   text-align: center;
   padding: 5px;
+  display: block;
+  width: 130px;
 }
 body .container .productContainer .seeMore a:hover {
-  background-color: #B33D68;
+  background-color: #FFDC31;
   color: #FFFCFA;
+  border-radius: 10px;
 }
 body .container .social {
   margin: 40px;
@@ -133,10 +137,12 @@ body .container .social p {
   margin: 20px;
 }
 body .container .social p a {
+  text-decoration: none;
   color: #737270;
 }
 body .container .social p a i {
   margin-right: 5px;
+  color: #FFDC31;
 }
 body .container .service {
   display: flex;
@@ -173,7 +179,7 @@ body .container .service .flip-card .flip-card-inner .flip-card-front, body .con
   backface-visibility: hidden;
 }
 body .container .service .flip-card .flip-card-inner .flip-card-front {
-  border: 3px solid #B33D68;
+  border: 3px solid #FFDC31;
   box-sizing: border-box;
   border-radius: 10px;
 }
@@ -181,7 +187,7 @@ body .container .service .flip-card .flip-card-inner .flip-card-front p {
   margin: 12px 0px;
 }
 body .container .service .flip-card .flip-card-inner .flip-card-back {
-  background-color: #B33D68;
+  background-color: #FFDC31;
   transform: rotateY(180deg);
   border-radius: 10px;
 }
@@ -256,8 +262,10 @@ body .lightbox .close::before {
 }
 .footerContainer div p {
   margin: 2px;
+  font-size: 12px;
 }
 .footerContainer div p a {
+  text-decoration: none;
   color: #737270;
 }
 .footerContainer div p a i {
