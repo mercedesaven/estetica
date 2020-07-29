@@ -1,0 +1,254 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+}
+
+body h2 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  color: #495057;
+}
+body p {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  color: #495057;
+}
+body h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  color: #495057;
+  text-align: center;
+  margin: 10px 0;
+}
+body header {
+  background-color: #FFFCFA;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 120px;
+  z-index: 10;
+  width: 100%;
+}
+body header .mainNav {
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+body header .mainNav .logo {
+  display: flex;
+  justify-content: center;
+}
+body header .mainNav .logo a img {
+  width: 50px;
+  height: 50px;
+}
+body header .mainNav .menu ul {
+  display: flex;
+  justify-content: space-around;
+  color: #A5A3A1;
+}
+body header .mainNav .menu ul li {
+  padding: 0 10px;
+}
+body header .mainNav .menu ul li a {
+  text-decoration: none;
+  color: #737270;
+  font-family: "Roboto", sans-serif;
+}
+body header .mainNav .menu ul li a:hover {
+  font-weight: bold;
+}
+body .main-container {
+  width: 100%;
+}
+body .main-container #inicio {
+  margin-top: 120px;
+}
+body .main-container #inicio .mainCarrousel #carouselExampleFade .carousel-inner {
+  margin: auto;
+  width: 100%;
+}
+body .main-container #inicio .mainCarrousel #carouselExampleFade .carousel-inner .carousel-item .active .imgsize {
+  height: 300px;
+}
+body .mainBanner img {
+  width: 100%;
+}
+body .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+body .container .staffDescription {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+body .container .social {
+  margin: 40px;
+}
+body .container .social p {
+  margin: 20px;
+}
+body .container .social p a {
+  text-decoration: none;
+  color: #737270;
+}
+body .container .social p a i {
+  margin-right: 5px;
+  color: #efeeed;
+}
+body #service {
+  display: flex;
+  flex-direction: column;
+}
+body #service .imgProd img {
+  display: flex;
+  width: 100%;
+}
+body #service h3 {
+  color: blue;
+}
+body #service .flip-card {
+  background-color: transparent;
+  width: 150px;
+  height: 50px;
+  perspective: 1000px;
+  margin: 15px;
+}
+body #service .flip-card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px;
+}
+body #service .flip-card .flip-card-inner .flip-card-front, body #service .flip-card .flip-card-inner .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+body #service .flip-card .flip-card-inner .flip-card-front {
+  border: 3px solid #efeeed;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+body #service .flip-card .flip-card-inner .flip-card-front p {
+  margin: 12px 0px;
+}
+body #service .flip-card .flip-card-inner:hover {
+  transform: rotateY(180deg);
+}
+body #service .flip-card .flip-card-inner:hover .flip-card-back {
+  background-color: #efeeed;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+}
+body #service .flip-card .flip-card-inner:hover .flip-card-back a {
+  text-decoration: none;
+}
+body #service .flip-card .flip-card-inner:hover .flip-card-back a p {
+  margin: 12px 0px;
+  color: #495057;
+  text-align: center;
+  font-weight: bold;
+}
+
+.footerContainer {
+  margin-top: 10px;
+  background-color: #FFFCFA;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+  bottom: 0px;
+}
+.footerContainer .footerNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 2px;
+  flex-direction: column;
+}
+.footerContainer .footerNav p {
+  margin: 2px;
+  font-size: 12px;
+}
+.footerContainer .footerNav p a {
+  text-decoration: none;
+  color: #737270;
+}
+.footerContainer .footerNav p a i {
+  margin-right: 2px;
+}
+.footerContainer .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 0;
+}
+.footerContainer .copyright p {
+  margin: 2px;
+  font-size: 12px;
+}
+
+@media (max-width: 500px) {
+  body #mainHeader #navBar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+  body .mainCarrousel {
+    width: 100%;
+  }
+  body .container .staffDescription, body .container .productContainer, body .container .social {
+    margin: 8px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    animation: moves-staff 4s 1;
+  }
+  @keyframes moves-staff {
+    0% {
+      left: 800px;
+      top: 0px;
+    }
+    100% {
+      left: 0px;
+      top: 0px;
+    }
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
