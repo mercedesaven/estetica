@@ -16,7 +16,7 @@ body{
       h3{
         font-family: $font-title;
         font-size: 30px;
-        color: $font-color;
+        color: $logo-color;
         text-align: center;
         margin: 10px 0 ;
 
@@ -27,53 +27,46 @@ body{
 header{
     background-color:$white;
     display: flex;
-    flex-direction: column; 
+    justify-content: space-evenly; 
     overflow: hidden;
     position: fixed;
     top: 0;
     left: 0;
-    height: 120px;
+    height: 65px;
     z-index: 10;
     width: 100%;
-    .mainNav{
-    flex-direction: column;
     align-items: center;
-    margin: 10px;
-        .logo{
-            a{
-                img{
+    padding: 10px;
+    .logo{
+        a{
+            img{
                 width: 50px;
                 height: 50px;
-                }
             }
-            display: flex;
-            justify-content: center;
         }
-        .menu{
-            ul{
-                display: flex;
-                justify-content: space-around;
-                color: $grey;
-                li{
-                padding: 0 10px;
-                a{
-                    text-decoration: none;
-                    color:$dark-grey;
-                    font-family: $font;
-                    &:hover{
-                        font-weight: bold;
-                        }
-                    }
-                    }
-
+        display: flex;
+        justify-content: center;
+    }
+    nav, ul{
+        display: flex;
+        li{
+            padding-right: 15px;
+            a{
+                text-decoration: none;
+                color: $logo-color;
+                span{
+                    font-family: $font-title;
+                    font-size: 20px;
                 }
             }
-    }   
-}
+        }
+    }
+ }
+
 .main-container{
     width: 100%;
+    margin-top:65px;
     #inicio{
-        margin-top:120px;
         .mainCarrousel{
         #carouselExampleFade{
             .carousel-inner{
@@ -95,39 +88,102 @@ header{
     width: 100%;  
   }
 }
+
 .container{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 15px;
   margin-bottom: 20px;
-    .staffDescription{
-      margin: 10px;
-      display: flex;
-      flex-direction: column;
-    }
-
-    
-    .social{
-        margin: 40px;
-        p{
-        margin: 20px;
-        a{
-            text-decoration: none;
-            color:$dark-grey;
-        i{
-            margin-right: 5px;
-            color:$light-grey
-                }
+  .profile-name{
+      font-family: $font-title;
+      color:$logo-color;
+      font-size: 40px;
+      margin:10px;
+  }
+    .profile{
+        margin:10px;
+        display: flex;
+        .profile-pic{
+            margin-right: 10px;
+            img{
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
             }
         }
-    
+        .profile-extract{
+            p{
+            font-family: $font;
+            color:$font-color;
+            font-style: italic;
+            text-align: center;
+          }
+        }
+    }
+    .description{
+      margin: 10px;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: center;
+      .card{
+        width: 300px;        
+        margin: 8px; 
+        text-align: center;
+        height: 50px;
+        display: flex;
+        border: 0px solid rgba(0,0,0,.125);
+        .card-inner {    
+            border-radius: 10px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            background-color: transparent;
+            width: 100%;  
+            border: 3px solid $logo-color;
+            box-sizing: border-box;
+            border-radius: 10px;
+                    a{
+                        text-decoration: none;
+                        p{
+                            margin: 12px 0px;
+
+                        }
+                    }
+                    
+                }
+                
+            }
+    }
+    .contact-info{
+     .social{
+         display: flex;
+        h2{
+            margin-top:65px;
+        }
+        p{
+        margin: 10px;
+            a{
+                text-decoration: none;
+                color:$dark-grey;
+                i{
+                    margin-right: 5px;
+                    color:$logo-color
+                        }
+                }
+        }
+        }
+    .locationMap{
+        iframe{
+            width: 800px;
+        }
+            }
         }
     }
     #service{
         display: flex;
         flex-direction: column;
+        
         .imgProd{
             img{
             display: flex;
@@ -135,70 +191,21 @@ header{
             }
         }
         h3{
-            color:blue
+            color:$logo-color;
+            margin-top:65px;
         }
-        .flip-card{
-            background-color: transparent;
-            width: 150px;
-            height: 50px;
-            perspective: 1000px;
-            margin: 15px;
-            
-            
-            .flip-card-inner {
-                    position: relative;
-                    width: 100%;
-                    height: 100%;
-                    text-align: center;
-                    transition: transform 0.6s;
-                    transform-style: preserve-3d;
-                    border-radius: 10px;
-                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-                    margin: 10px;
-                    .flip-card-front, .flip-card-back {
-                                position: absolute;
-                                width: 100%;
-                                height: 100%;
-                                -webkit-backface-visibility: hidden;
-                                backface-visibility: hidden;
-                            }
-                            
-                    .flip-card-front {                    
-                                border: 3px solid $light-grey;
-                                box-sizing: border-box;
-                                border-radius: 10px;
-                                p{
-                                    margin: 12px 0px;
-                                }
-                                
-                            }
-                            &:hover{ 
-                                transform: rotateY(180deg);
-                    .flip-card-back {
-                                background-color: $light-grey;
-                                transform: rotateY(180deg);
-                                border-radius: 10px;
-                                a{
-                                    text-decoration: none;
-                                    p{
-                                    margin: 12px 0px;
-                                    color:$font-color;
-                                    text-align: center;
-                                    font-weight: bold;}
-                                }
-                            }
-                        }
+        
+                   
                     }
                }
-            }
-    }    
+            
+    
        
    
 
 
     .footerContainer{
-        margin-top: 10px;
-        background-color:$white ;
+        margin-top: 20px;
         display: flex;
         width: 100%;
         flex-direction: column;
@@ -208,15 +215,14 @@ header{
             display: flex;
             align-items: center;
             justify-content: center;
-            padding-bottom: 2px;
-            flex-direction: column;
-
+            padding: 2px 0;
             p{  
                 margin: 2px;
                 font-size: 12px;
+                margin: 5px;
                 a {
                  text-decoration: none;
-                color:$dark-grey;
+                color: $logo-color;
                     i{
                     margin-right: 2px;
                     }
@@ -231,6 +237,10 @@ header{
             p{  
                 margin: 2px;
                 font-size: 12px;
+                font-weight: bold;
+                span{
+                    color:$logo-color
+                }
                 }
             }
     }
@@ -239,12 +249,23 @@ header{
         
 @media (max-width: $breakpoint-mobile){
 body{
-    #mainHeader{
-        #navBar{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin: 10px
+    header{
+        .logo{
+           a{
+               img { 
+                   width: 40px;
+                   height: 40px;
+                }
+            }
+        }
+        nav, ul{
+            li{
+                a{
+                    span{
+                        font-size: 15px;
+                    }
+                }
+            }
         }
     }
     .mainCarrousel{
@@ -253,12 +274,49 @@ body{
     
     
     .container{
-        .staffDescription, .productContainer, .social{
+        .profile-name{
+            font-size: 25px;
+        }
+          .profile{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .profile-pic{
+                  margin-right: 10px;
+                  img{
+                      width: 100px;
+                      height: 100px;
+                      border-radius: 50%;
+                  }
+              }
+              .profile-extract{
+              }
+          }
+          .description{
+            display: flex;
+            flex-direction: column;
+           
+            .card{
+              width: 100%;        
+                  }
+          }
+        .description, .productContainer, .social{
             margin: 8px;
             width: 100%;
             height: 100%;
             position: relative;
             animation: moves-staff 4s 1;
+        }
+        .contact-info{
+            .social{
+                display: flex;
+                flex-direction: column;
+            }
+            .locationMap{
+                iframe{
+                    width: 290px;
+                }
+            }
         }
         @keyframes moves-staff {
             0%  {left:800px; top:0px;}
@@ -267,7 +325,15 @@ body{
         
     }
     }
+    .footerContainer{
+        .footerNav{
+            display: flex;
+            flex-direction: column;
+        }
+    }
 }
+
+
 
       
    
