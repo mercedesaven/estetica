@@ -36,7 +36,7 @@ body h3 {
   font-size: 30px;
   color: #b58e0f;
   text-align: center;
-  margin: 10px 0;
+  margin: 50px 0 10px 0;
 }
 body header {
   background-color: #FFFCFA;
@@ -170,15 +170,22 @@ body .container .contact-info .social p a i {
 body .container .contact-info .locationMap iframe {
   width: 800px;
 }
-body #service {
+
+.procedimientos-nav {
+  width: 40%;
+  display: flex;
+}
+
+.procedimientos-sec {
+  width: 60%;
   display: flex;
   flex-direction: column;
 }
-body #service .imgProd img {
+.procedimientos-sec .imgProd img {
   display: flex;
   width: 100%;
 }
-body #service h3 {
+.procedimientos-sec h3 {
   color: #b58e0f;
   margin-top: 65px;
 }
@@ -225,12 +232,15 @@ body #service h3 {
 }
 
 @media (max-width: 500px) {
+  body h3 {
+    font-size: 25px;
+  }
   body header .logo a img {
-    width: 40px;
-    height: 40px;
+    width: 35px;
+    height: 35px;
   }
   body header nav li a span, body header ul li a span {
-    font-size: 15px;
+    font-size: 12px;
   }
   body .mainCarrousel {
     width: 100%;

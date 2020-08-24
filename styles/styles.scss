@@ -18,7 +18,7 @@ body{
         font-size: 30px;
         color: $logo-color;
         text-align: center;
-        margin: 10px 0 ;
+        margin: 50px 0 10px 0 ;
 
     }
        
@@ -180,28 +180,32 @@ header{
             }
         }
     }
-    #service{
-        display: flex;
-        flex-direction: column;
-        
-        .imgProd{
-            img{
-            display: flex;
-            width: 100%;
-            }
-        }
-        h3{
-            color:$logo-color;
-            margin-top:65px;
-        }
-        
-                   
-                    }
-               }
+                   }
             
     
-       
-   
+       .procedimientos-nav{
+           width: 40%;
+           display: flex;
+       }
+                   .procedimientos-sec{
+                       width: 60%;
+                    display: flex;
+                    flex-direction: column;
+                    
+                    .imgProd{
+                        img{
+                        display: flex;
+                        width: 100%;
+                        }
+                    }
+                    h3{
+                        color:$logo-color;
+                        margin-top:65px;
+                    }
+                    
+                               
+                                }
+            
 
 
     .footerContainer{
@@ -249,12 +253,15 @@ header{
         
 @media (max-width: $breakpoint-mobile){
 body{
+    h3{
+        font-size: 25px;
+    }
     header{
         .logo{
            a{
                img { 
-                   width: 40px;
-                   height: 40px;
+                   width: 35px;
+                   height: 35px;
                 }
             }
         }
@@ -262,7 +269,7 @@ body{
             li{
                 a{
                     span{
-                        font-size: 15px;
+                        font-size: 12px;
                     }
                 }
             }
