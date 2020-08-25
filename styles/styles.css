@@ -348,12 +348,12 @@ body .footerContainer .copyright p span {
     flex-direction: column;
     align-items: center;
   }
-  body .container .service-presentation .service-pic {
+  body .container .service-presentation .service-list .service-pic {
     margin: 20px;
   }
-  body .container .service-presentation .service-pic img {
-    width: 150px;
-    height: 150px;
+  body .container .service-presentation .service-list .service-pic img {
+    width: 200px;
+    height: 200px;
   }
   body .container .service-presentation .service-list .service-subtitle {
     font-size: 20px;
