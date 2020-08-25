@@ -402,14 +402,15 @@ body{
               display: flex;
               flex-direction: column;
               align-items: center;
-              .service-pic{
-                  margin: 20px;
-                  img{
-                      width: 150px;
-                      height: 150px;
-                  }
-              }
+              
               .service-list{
+                .service-pic{
+                    margin: 20px;
+                    img{
+                        width: 200px;
+                        height: 200px;
+                    }
+                }
                   .service-subtitle{
                       font-size: 20px;
                   }
