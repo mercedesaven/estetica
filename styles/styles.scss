@@ -18,14 +18,13 @@ body{
         font-size: 30px;
         color: $logo-color;
         text-align: center;
-        margin: 50px 0 10px 0 ;
 
     }
        
 
 
 header{
-    background-color:$white;
+    background-color:#FFF;
     display: flex;
     justify-content: space-evenly; 
     overflow: hidden;
@@ -43,20 +42,29 @@ header{
                 width: 50px;
                 height: 50px;
             }
+            
         }
         display: flex;
         justify-content: center;
+        
     }
     nav, ul{
         display: flex;
         li{
-            padding-right: 15px;
+            padding-right: 20px;
             a{
                 text-decoration: none;
                 color: $logo-color;
                 span{
                     font-family: $font-title;
                     font-size: 20px;
+                }
+                &:link{
+                    text-decoration: none;
+                    
+                }
+                &:hover{
+                    color:$dark-grey
                 }
             }
         }
@@ -94,13 +102,20 @@ header{
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 20px;
+  #present{
+      padding-top: 70px;
+  }
   .profile-name{
       font-family: $font-title;
       color:$logo-color;
       font-size: 40px;
-      margin:10px;
+      padding:30px;
+  }
+  .profile-profession{
+      padding:10px;
+      font-size: 30px;
   }
     .profile{
         margin:10px;
@@ -122,45 +137,58 @@ header{
           }
         }
     }
-    .description{
-      margin: 10px;
-      display: flex;
-      width: 100%;
-      flex-wrap: wrap;
-      justify-content: center;
-      .card{
-        width: 300px;        
-        margin: 8px; 
-        text-align: center;
-        height: 50px;
-        display: flex;
-        border: 0px solid rgba(0,0,0,.125);
-        .card-inner {    
-            border-radius: 10px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-            background-color: transparent;
-            width: 100%;  
-            border: 3px solid $logo-color;
-            box-sizing: border-box;
-            border-radius: 10px;
-                    a{
-                        text-decoration: none;
-                        p{
-                            margin: 12px 0px;
-
+    .services{
+        #cirugia{
+            padding-top: 70px;
+        }
+        #estetica{
+            padding-top: 70px;
+        }
+        .services-container{
+            .description{
+            margin: auto;
+            padding-top: 30px;
+            display: flex;
+            width: 80%;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            .card{
+                width: 300px;        
+                margin: 8px; 
+                text-align: center;
+                height: 50px;
+                display: flex;
+                border: 0px solid rgba(0,0,0,.125);
+                .card-inner {    
+                    border-radius: 10px;
+                    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+                    background-color: transparent;
+                    width: 100%;  
+                    border: 3px solid $logo-color;
+                    box-sizing: border-box;
+                    border-radius: 10px;
+                            a{
+                                text-decoration: none;
+                                p{
+                                    margin: 12px 0px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            
                         }
+                        
                     }
-                    
                 }
-                
             }
     }
+    #contacto{
+        padding-top: 70px;
+    }
     .contact-info{
+        padding-top: 20px;
      .social{
          display: flex;
-        h2{
-            margin-top:65px;
-        }
         p{
         margin: 10px;
             a{
@@ -179,32 +207,72 @@ header{
         }
             }
         }
-    }
-                   }
-            
     
-       .procedimientos-nav{
-           width: 40%;
-           display: flex;
-       }
-                   .procedimientos-sec{
-                       width: 60%;
-                    display: flex;
-                    flex-direction: column;
-                    
-                    .imgProd{
-                        img{
-                        display: flex;
-                        width: 100%;
-                        }
+
+        .service-title{
+            padding-top: 40px;
+            width: 70%;
+            color:$logo-color;
+            font-size: 40px;
+            text-align: center;
+            text-transform:capitalize
+        }
+        .service-presentation{
+            width: 100%;
+            display: flex;
+            margin-top:30px;
+            align-items: center;
+            
+        .service-list{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            .service-subtitle{
+            text-transform: uppercase;
+            text-align: center;
+            margin: 10px;
+            font-size: 30px;
+            }
+            ul{
+                padding: 10px;
+                background-color: $light-grey;
+                li{
+                    padding:10px;
+                    h2{
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        padding: 10px;
                     }
-                    h3{
-                        color:$logo-color;
-                        margin-top:65px;
+                    p{
+                        font-size: 15px;
+                        text-transform: initial;
+                        
                     }
-                    
-                               
-                                }
+                    ul{
+                        li{
+                        list-style-type: circle;
+                        text-transform: initial;
+                        font-family: $font;
+                        font-size: 12px;
+                    }
+                    }
+                }
+            }
+            .service-pic{
+                margin: 40px;
+                align-content: center;
+                img{ 
+                border-radius: 50%;;
+                width: 400px ;
+                 height: 400px;
+                 }
+             }
+        }
+    }
+}
+            
+
+    
             
 
 
@@ -248,7 +316,7 @@ header{
                 }
             }
     }
-
+}
 
         
 @media (max-width: $breakpoint-mobile){
@@ -296,8 +364,6 @@ body{
                       border-radius: 50%;
                   }
               }
-              .profile-extract{
-              }
           }
           .description{
             display: flex;
@@ -329,7 +395,36 @@ body{
             0%  {left:800px; top:0px;}
             100% { left:0px; top:0px;}
           }
-        
+          .service-title{
+              font-size: 20px;
+          }
+          .service-presentation{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              .service-pic{
+                  margin: 20px;
+                  img{
+                      width: 200px;
+                      height: 200px;
+                  }
+              }
+              .service-list{
+                  .service-subtitle{
+                      font-size: 20px;
+                  }
+                  ul{
+                      li{
+                          h2{
+                              font-size: 16px;
+                          }
+                          p{
+                              font-size: 12px;
+                          }
+                      }
+                  }
+              }
+          }
     }
     }
     .footerContainer{
