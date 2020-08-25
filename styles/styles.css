@@ -1,16 +1,4 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -36,10 +24,9 @@ body h3 {
   font-size: 30px;
   color: #b58e0f;
   text-align: center;
-  margin: 50px 0 10px 0;
 }
 body header {
-  background-color: #FFFCFA;
+  background-color: #FFF;
   display: flex;
   justify-content: space-evenly;
   overflow: hidden;
@@ -64,7 +51,7 @@ body header nav, body header ul {
   display: flex;
 }
 body header nav li, body header ul li {
-  padding-right: 15px;
+  padding-right: 20px;
 }
 body header nav li a, body header ul li a {
   text-decoration: none;
@@ -73,6 +60,12 @@ body header nav li a, body header ul li a {
 body header nav li a span, body header ul li a span {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 20px;
+}
+body header nav li a:link, body header ul li a:link {
+  text-decoration: none;
+}
+body header nav li a:hover, body header ul li a:hover {
+  color: #737270;
 }
 body .main-container {
   width: 100%;
@@ -93,14 +86,21 @@ body .container {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 30px;
   margin-bottom: 20px;
+}
+body .container #present {
+  padding-top: 70px;
 }
 body .container .profile-name {
   font-family: "Roboto Condensed", sans-serif;
   color: #b58e0f;
   font-size: 40px;
-  margin: 10px;
+  padding: 30px;
+}
+body .container .profile-profession {
+  padding: 10px;
+  font-size: 30px;
 }
 body .container .profile {
   margin: 10px;
@@ -120,14 +120,22 @@ body .container .profile .profile-extract p {
   font-style: italic;
   text-align: center;
 }
-body .container .description {
-  margin: 10px;
+body .container .services #cirugia {
+  padding-top: 70px;
+}
+body .container .services #estetica {
+  padding-top: 70px;
+}
+body .container .services .services-container .description {
+  margin: auto;
+  padding-top: 30px;
   display: flex;
-  width: 100%;
+  width: 80%;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
-body .container .description .card {
+body .container .services .services-container .description .card {
   width: 300px;
   margin: 8px;
   text-align: center;
@@ -135,7 +143,7 @@ body .container .description .card {
   display: flex;
   border: 0px solid rgba(0, 0, 0, 0.125);
 }
-body .container .description .card .card-inner {
+body .container .services .services-container .description .card .card-inner {
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   background-color: transparent;
@@ -144,17 +152,21 @@ body .container .description .card .card-inner {
   box-sizing: border-box;
   border-radius: 10px;
 }
-body .container .description .card .card-inner a {
+body .container .services .services-container .description .card .card-inner a {
   text-decoration: none;
 }
-body .container .description .card .card-inner a p {
+body .container .services .services-container .description .card .card-inner a p {
   margin: 12px 0px;
+  text-transform: uppercase;
+}
+body .container #contacto {
+  padding-top: 70px;
+}
+body .container .contact-info {
+  padding-top: 20px;
 }
 body .container .contact-info .social {
   display: flex;
-}
-body .container .contact-info .social h2 {
-  margin-top: 65px;
 }
 body .container .contact-info .social p {
   margin: 10px;
@@ -170,27 +182,63 @@ body .container .contact-info .social p a i {
 body .container .contact-info .locationMap iframe {
   width: 800px;
 }
-
-.procedimientos-nav {
-  width: 40%;
-  display: flex;
+body .container .service-title {
+  padding-top: 40px;
+  width: 70%;
+  color: #b58e0f;
+  font-size: 40px;
+  text-align: center;
+  text-transform: capitalize;
 }
-
-.procedimientos-sec {
-  width: 60%;
+body .container .service-presentation {
+  width: 100%;
   display: flex;
+  margin-top: 30px;
+  align-items: center;
+}
+body .container .service-presentation .service-list {
+  display: flex;
+  align-items: center;
   flex-direction: column;
 }
-.procedimientos-sec .imgProd img {
-  display: flex;
-  width: 100%;
+body .container .service-presentation .service-list .service-subtitle {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
 }
-.procedimientos-sec h3 {
-  color: #b58e0f;
-  margin-top: 65px;
+body .container .service-presentation .service-list ul {
+  padding: 10px;
+  background-color: #efeeed;
 }
-
-.footerContainer {
+body .container .service-presentation .service-list ul li {
+  padding: 10px;
+}
+body .container .service-presentation .service-list ul li h2 {
+  font-size: 20px;
+  text-transform: uppercase;
+  padding: 10px;
+}
+body .container .service-presentation .service-list ul li p {
+  font-size: 15px;
+  text-transform: initial;
+}
+body .container .service-presentation .service-list ul li ul li {
+  list-style-type: circle;
+  text-transform: initial;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+body .container .service-presentation .service-list .service-pic {
+  margin: 40px;
+  align-content: center;
+}
+body .container .service-presentation .service-list .service-pic img {
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+}
+body .footerContainer {
   margin-top: 20px;
   display: flex;
   width: 100%;
@@ -198,36 +246,36 @@ body .container .contact-info .locationMap iframe {
   position: relative;
   bottom: 0px;
 }
-.footerContainer .footerNav {
+body .footerContainer .footerNav {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2px 0;
 }
-.footerContainer .footerNav p {
+body .footerContainer .footerNav p {
   margin: 2px;
   font-size: 12px;
   margin: 5px;
 }
-.footerContainer .footerNav p a {
+body .footerContainer .footerNav p a {
   text-decoration: none;
   color: #b58e0f;
 }
-.footerContainer .footerNav p a i {
+body .footerContainer .footerNav p a i {
   margin-right: 2px;
 }
-.footerContainer .copyright {
+body .footerContainer .copyright {
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 5px 0;
 }
-.footerContainer .copyright p {
+body .footerContainer .copyright p {
   margin: 2px;
   font-size: 12px;
   font-weight: bold;
 }
-.footerContainer .copyright p span {
+body .footerContainer .copyright p span {
   color: #b58e0f;
 }
 
@@ -291,6 +339,30 @@ body .container .contact-info .locationMap iframe {
       left: 0px;
       top: 0px;
     }
+  }
+  body .container .service-title {
+    font-size: 20px;
+  }
+  body .container .service-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body .container .service-presentation .service-pic {
+    margin: 20px;
+  }
+  body .container .service-presentation .service-pic img {
+    width: 200px;
+    height: 200px;
+  }
+  body .container .service-presentation .service-list .service-subtitle {
+    font-size: 20px;
+  }
+  body .container .service-presentation .service-list ul li h2 {
+    font-size: 16px;
+  }
+  body .container .service-presentation .service-list ul li p {
+    font-size: 12px;
   }
 
   .footerContainer .footerNav {
