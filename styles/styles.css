@@ -296,6 +296,9 @@ body .footerContainer .copyright p span {
   body .container .profile-name {
     font-size: 25px;
   }
+  body .container .profile-profession {
+    font-size: 20px;
+  }
   body .container .profile {
     display: flex;
     flex-direction: column;
@@ -362,7 +365,7 @@ body .footerContainer .copyright p span {
     font-size: 16px;
   }
   body .container .service-presentation .service-list ul li p {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .footerContainer .footerNav {
