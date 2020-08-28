@@ -184,9 +184,13 @@ header{
     }
     #contacto{
         padding-top: 70px;
+        
     }
     .contact-info{
         padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
      .social{
          display: flex;
         p{
