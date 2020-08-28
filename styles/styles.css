@@ -164,6 +164,9 @@ body .container #contacto {
 }
 body .container .contact-info {
   padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 body .container .contact-info .social {
   display: flex;
