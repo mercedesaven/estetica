@@ -3,14 +3,14 @@ $purple: #B33D68;
 $yellow:#FFF58A;
 $light-blue: #45B2CC;
 $blue: #469DB3;
-$font: 'Roboto', sans-serif;
+$font: 'Source Sans Pro', sans-serif;
 $grey: #A5A3A1;
 $light-grey: #efeeed;
 $dark-grey: #737270;
 $medium-grey: #B3B1AF;
 $white: #FFFCFA;
 $font-color:#495057;
-$font-title: 'Roboto Condensed', sans-serif;
+$font-title: abiah-regular;
 $breakpoint-tablet: 768px;
 $breakpoint-mobile: 500px;
 $gold:#FFDC31;
@@ -18,3 +18,8 @@ $mid-gold:#E8B320;
 $dark-gold: #FFAE24;
 $new-gold:#CCAF37;
 $logo-color: #b58e0f;
+
+@font-face {
+    font-family: abiah-regular;
+    src: url(font/Abiah-Regular.woff);
+ }
