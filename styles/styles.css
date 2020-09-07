@@ -271,7 +271,8 @@ body .footerContainer {
   display: flex;
   width: 100%;
   flex-direction: column;
-  position: relative;
+  background-color: #FFFCFA;
+  position: fixed;
   bottom: 0px;
 }
 body .footerContainer .footerNav {

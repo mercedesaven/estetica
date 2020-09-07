@@ -307,7 +307,8 @@ header{
         display: flex;
         width: 100%;
         flex-direction: column;
-        position: relative;
+        background-color: $white;
+        position: fixed;
         bottom: 0px;
         .footerNav{
             display: flex;
