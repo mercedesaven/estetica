@@ -37,7 +37,7 @@ header{
     align-items: center;
     padding: 10px;
     .logo{
-        height: 170px;
+        height: 60px;
         box-sizing: border-box;
         a{
             img{
@@ -70,27 +70,7 @@ header{
             }
         }
     }
-    .wa-logo{
-        position: fixed;
-        width: 50px;
-        height: 50px;
-        bottom: 40px;
-        background-color: #25d366;
-        border-radius: 50px;
-        text-align: center;
-        font-size: 30px;
-        box-shadow: 3px 4px 3px #999;
-        right: 35px;
-        z-index: 100;
-        a{
-            text-decoration: none;
-            color: #FFF;
-        }
-    }
-    .my-float {
-        margin-top: 10px;
-        
-    }
+    
  }
 
 .main-container{
@@ -230,6 +210,7 @@ header{
     .locationMap{
         iframe{
             width: 800px;
+            margin-bottom: 40px;
         }
             }
         }
@@ -328,6 +309,27 @@ header{
                 }
             }
         }
+        .wa-logo{
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 40px;
+            background-color: #25d366;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 3px 4px 3px #999;
+            right: 35px;
+            z-index: 100;
+            a{
+                text-decoration: none;
+                color: #FFF;
+            }
+        }
+        .my-float {
+            margin-top: 10px;
+            
+        }
         .copyright{
             display: flex;
             align-items: center;
@@ -352,8 +354,10 @@ body{
         font-size: 25px;
     }
     header{
+        display: flex;
+        flex-direction: column;
         .logo{
-            height: 85px;
+            height: 28px;
             box-sizing: border-box;
             padding-right: 15px;
            a{
@@ -389,7 +393,7 @@ body{
               flex-direction: column;
               align-items: center;
               .profile-pic{
-                  margin-right: 10px;
+                  margin: 10px;
                   img{
                       width: 100px;
                       height: 100px;
@@ -427,6 +431,7 @@ body{
             .locationMap{
                 iframe{
                     width: 290px;
+                    margin-bottom: 125px;
                 }
             }
         }
@@ -474,17 +479,3 @@ body{
         }
     }
 }
-
-
-
-      
-   
-
-    // color gris para complemento. Light grey. 
-    // en mobile: banner. No se ve
-    // sacar el footer. 
-    //  poner mas imagenes para mobile
-    // redefinir flipper. 
-    // mas servicios: van a estar dividos en diferentes secciones. 
-    // presentacion mica. 
-    
