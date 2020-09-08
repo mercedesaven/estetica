@@ -44,7 +44,7 @@ body header {
   padding: 10px;
 }
 body header .logo {
-  height: 170px;
+  height: 60px;
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -71,26 +71,6 @@ body header nav li a:link, body header ul li a:link {
 }
 body header nav li a:hover, body header ul li a:hover {
   color: #737270;
-}
-body header .wa-logo {
-  position: fixed;
-  width: 50px;
-  height: 50px;
-  bottom: 40px;
-  background-color: #25d366;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
-  box-shadow: 3px 4px 3px #999;
-  right: 35px;
-  z-index: 100;
-}
-body header .wa-logo a {
-  text-decoration: none;
-  color: #FFF;
-}
-body header .my-float {
-  margin-top: 10px;
 }
 body .main-container {
   width: 100%;
@@ -209,6 +189,7 @@ body .container .contact-info .social p a i {
 }
 body .container .contact-info .locationMap iframe {
   width: 800px;
+  margin-bottom: 40px;
 }
 body .container .service-title {
   padding-top: 40px;
@@ -293,6 +274,26 @@ body .footerContainer .footerNav p a {
 body .footerContainer .footerNav p a i {
   margin-right: 2px;
 }
+body .footerContainer .wa-logo {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  background-color: #25d366;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 3px 4px 3px #999;
+  right: 35px;
+  z-index: 100;
+}
+body .footerContainer .wa-logo a {
+  text-decoration: none;
+  color: #FFF;
+}
+body .footerContainer .my-float {
+  margin-top: 10px;
+}
 body .footerContainer .copyright {
   display: flex;
   align-items: center;
@@ -312,8 +313,12 @@ body .footerContainer .copyright p span {
   body h3 {
     font-size: 25px;
   }
+  body header {
+    display: flex;
+    flex-direction: column;
+  }
   body header .logo {
-    height: 85px;
+    height: 28px;
     box-sizing: border-box;
     padding-right: 15px;
   }
@@ -338,7 +343,7 @@ body .footerContainer .copyright p span {
     align-items: center;
   }
   body .container .profile .profile-pic {
-    margin-right: 10px;
+    margin: 10px;
   }
   body .container .profile .profile-pic img {
     width: 100px;
@@ -369,6 +374,7 @@ body .footerContainer .copyright p span {
   }
   body .container .contact-info .locationMap iframe {
     width: 290px;
+    margin-bottom: 125px;
   }
   @keyframes moves-staff {
     0% {
